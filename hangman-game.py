@@ -1,4 +1,5 @@
-#### THIS GAME IS CREATED BY OZ-CODEZ ########
+#### THIS GAME IS CREATED BY OZ-CODEZ  ####
+#### HAVE FUN! ####
 
 print("Welcome to the Hangman")
 
