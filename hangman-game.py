@@ -1,5 +1,6 @@
+#### THIS GAME IS CREATED BY OZ-CODEZ ########
+
 print("Welcome to the Hangman")
-#greeting
 
 word_list = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
          'coyote crow deer dog donkey duck eagle ferret fox frog goat '
@@ -8,10 +9,7 @@ word_list = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
          'rhino salmon seal shark sheep skunk sloth snake spider '
          'stork swan tiger toad trout turkey turtle weasel whale wolf '
          'wombat zebra ').split()
-#wordlist
 
-
-#hangman drawings
 HANGMANPICS = ['''
   +---+
   |   |
@@ -64,17 +62,18 @@ HANGMANPICS = ['''
 =========''']
 import random
 
-
 chosen_word = random.choice(word_list)
 
 guessed_word = []
 for letter in chosen_word:
     guessed_word.append("_")
 
-
 live = 6
+
 print(HANGMANPICS[0])
+
 hang_counter = 1
+
 while "_" in guessed_word and not live == 0 :
     guess = input("Guess a letter: ").lower()
     if(guess in guessed_word):
